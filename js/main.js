@@ -13,7 +13,7 @@ window.onload = function() {
 		if (parseInt(popAds.style.bottom) === 0) {
 			clearInterval(timer);
 		}
-	},10)
+	},5)
 
 	var adClose = getElement('#ad-close');
 	adClose.addEventListener('click',function(){ //指定元素添加事件
@@ -22,11 +22,11 @@ window.onload = function() {
 		}
 		var timers = setInterval(function(){
 			var bottomss = parseInt(popAds.style.bottom);
-			popAds.style.bottom = bottoms + addHeight + 'px';
+			popAds.style.bottom = bottomss - addHeight + 'px';
 			if (parseInt(popAds.style.bottom) === -180) {
 				clearInterval(timers);
 			}
-		},10)
+		},5)
 	})
 }
 
