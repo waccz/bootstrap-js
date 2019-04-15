@@ -103,12 +103,10 @@ body {
     }
 }
 
-.hide {
-    display: none;
-}
+/* 弹出广告 */
 .pop-ads {
     width: 260px;
-    height: 180px;
+    height: 150px;
     position: fixed;
     bottom: 0;
     right: 20px;
@@ -132,4 +130,17 @@ body {
     position: absolute;
     top: 14px;
     right: 15px;
+}
+
+/* 右侧在线客服 */
+.right-slide {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+}
+.slide-min {
+    width: 28px;
+    height: 112px;
+    background: url(../images/slide-min.jpg) no-repeat;
+    cursor: pointer;
 }
